@@ -25,12 +25,12 @@
   color: black;
 }
 
-.header a.active {
+.header a.selected {
   background-color: dodgerblue;
   color: white;
 }
 
-.header-right {
+.select-header {
   float: right;
 }
 
@@ -40,7 +40,8 @@
     display: block;
     text-align: left;
   }
-  .header-right {
+  
+  .select-header {
     float: none;
   }
 }
