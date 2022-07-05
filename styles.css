@@ -33,11 +33,6 @@ header a.selected {
 	color: white;
 }
 
-header a.projects {
-	display: flex;
-	justify-content: center;
-}
-
 .middle-header {
 	display: flex;
 	justify-content: center;
