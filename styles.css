@@ -27,15 +27,26 @@ body {
   color: black;
 }
 
+.header a.logo {
+  float:left;
+}
+
 .header a.selected {
   background-color: dodgerblue;
   color: white;
 }
 
-.header-select {
-  margin: auto
+.header a.home {
+  float:right;
 }
 
+.header a.about {
+  float:right;
+}
+
+.header a.projects {
+  float:right;
+}
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
