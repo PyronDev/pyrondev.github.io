@@ -12,7 +12,8 @@ header {
 }
 
 header a {
-	float: left;
+	display: flex;
+	justify-content: left;
 	color: black;
 	text-align: center;
 	padding: 12px;
@@ -27,31 +28,21 @@ header a:hover {
 	color: black;
 }
 
-header a.logo {
-	float: left;
-}
-
 header a.selected {
-	float: right;
 	background-color: dodgerblue;
 	color: white;
 }
 
-header a.home {
-	float: right;
-}
-
-header a.about {
-	float: right;
-}
-
 header a.projects {
-	float: right;
+	display: flex;
+	justify-content: center;
 }
 
-.middle-header{
+.middle-header {
 	display: flex;
+	justify-content: center;
 }
+
 @media screen and (max-width: 500px) {
 	header a {
 		float: none;
