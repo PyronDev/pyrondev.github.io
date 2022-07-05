@@ -50,7 +50,7 @@ header a.projects {
 }
 
 .middle-header{
-	float:right;
+	display: flex;
 }
 @media screen and (max-width: 500px) {
 	header a {
