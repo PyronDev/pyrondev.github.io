@@ -37,7 +37,7 @@ body {
   color: white;
 }
 
-.select-header {
+.header-select {
   float: right;
 }
 
@@ -48,7 +48,7 @@ body {
     text-align: left;
   }
   
-  .select-header {
+  .header-select {
     float: none;
   }
 }
