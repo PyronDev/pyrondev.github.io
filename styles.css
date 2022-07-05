@@ -38,7 +38,7 @@ body {
 }
 
 .header-select {
-  float: right;
+  float: middle;
 }
 
 @media screen and (max-width: 500px) {
