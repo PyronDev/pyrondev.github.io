@@ -33,7 +33,7 @@ body {
 }
 
 .header-select {
-  margin: 0 auto
+  margin: auto
 }
 
 @media screen and (max-width: 500px) {
