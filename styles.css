@@ -33,7 +33,7 @@ body {
 }
 
 .header-select {
-  float: middle;
+  margin: 0 auto
 }
 
 @media screen and (max-width: 500px) {
@@ -43,7 +43,4 @@ body {
     text-align: left;
   }
   
-  .header-select {
-    float: none;
-  }
 }
