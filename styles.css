@@ -33,7 +33,7 @@ body {
 
 .header a.selected {
   float:right;
-d  background-color: dodgerblue;
+  background-color: dodgerblue;
   color: white;
 }
 
