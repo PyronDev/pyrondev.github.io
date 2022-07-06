@@ -44,7 +44,7 @@ header a.selected {
 }
 
 header a.selected:hover {
-	background: linear-gradient(180deg, #9842f5, #4266f5);
+	background: #0068c9;
 	color: white;
 }
 
@@ -70,7 +70,7 @@ header a.about {
 }
 
 header a.about:hover {
-	background: linear-gradient(180deg, #9842f5, #4266f5);
+	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
 	animation: about-hover 30ms ease;
 }
@@ -87,7 +87,7 @@ header a.projects {
 }
 
 header a.projects:hover {
-	background: linear-gradient(180deg, #9842f5, #4266f5);
+	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
 	animation: projects-hover 30ms ease;
 
