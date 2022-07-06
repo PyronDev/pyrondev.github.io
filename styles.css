@@ -49,9 +49,10 @@ header a.logo {
 	display: flex;
 	margin-top: -15px;
 	margin-bottom: -58px;
-	margin-right: 96000px;
+	margin-right: 1794px;
 	padding: 5px;
 	min-width: 64px;
+	border-radius: 15px;
 }
 
 header a.logo:hover {
