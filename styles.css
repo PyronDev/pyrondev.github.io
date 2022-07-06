@@ -61,6 +61,8 @@ header a.logo:hover {
 .logo-image {
 	display: flex;
 	border-radius: 10px;
+	width: 64px;
+	height: 64px;
 }
 
 .middle-header {
