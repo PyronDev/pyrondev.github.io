@@ -133,33 +133,6 @@ header a.projects:hover{
 	0% {
 		height:19px;
 	}
-	11% {
-		height:20px;
-	}
-	22% {
-		height:21px;
-	}
-	33% {
-		height:22px;
-	}
-	44% {
-		height:23px;
-	}
-	55% {
-		height:24px;
-	}
-	66% {
-		height:25px;
-	}
-	77% {
-		height:26px;
-	}
-	88% {
-		height:27px;
-	}
-	99% {
-		height:28px;
-	}
 	100% {
 		height:30px;
 	}
@@ -167,33 +140,6 @@ header a.projects:hover{
 @keyframes about-leave {
 	0% {
 		height:30px;
-	}
-	11% {
-		height:28px;
-	}
-	22% {
-		height:27px;
-	}
-	33% {
-		height:26px;
-	}
-	44% {
-		height:25px;
-	}
-	55% {
-		height:24px;
-	}
-	66% {
-		height:23px;
-	}
-	77% {
-		height:22px;
-	}
-	88% {
-		height:21px;
-	}
-	99% {
-		height:20px;
 	}
 	100% {
 		height:19px;
