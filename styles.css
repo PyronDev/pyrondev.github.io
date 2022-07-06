@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 body {
-	background-color: lightgrey;
-	font-family: "Arial Black", Helvetica, sans-serif;
+	background-color: darkblue;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16em;
 	color: black;
 }
 
 header {
 	overflow: hidden;
-  	border-radius: 10px;
-	background-color: #f1f1f1;
+	border-radius: 10px;
+	background-color: white;
 	padding: 20px 10px;
 }
 
@@ -32,12 +34,27 @@ header a.selected {
 	color: white;
 }
 
+header a.logo {
+	display: flex;
+	margin-top: -0.8%;
+	margin-bottom: -3%;
+	margin-right: 96%;
+	padding: 5px
+}
+
+header a.logo:hover {
+	cursor: pointer;
+}
+
+.logo-image {
+	display: flex;
+	border-radius: 10px;
+}
+
 .middle-header {
 	display: flex;
 	justify-content: center;
-	margin-left: 56px;
 
-	
 }
 
 @media screen and (max-width: 500px) {
