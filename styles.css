@@ -52,6 +52,7 @@ header a.logo {
 	padding: 5px;
 	min-width: 64px;
 	border-radius: 15px;
+	display: flex;
 }
 
 header a.logo:hover {
@@ -59,7 +60,6 @@ header a.logo:hover {
 }
 
 .logo-image {
-	display: flex;
 	border-radius: 10px;
 	width: 64px;
 	height: 64px;
