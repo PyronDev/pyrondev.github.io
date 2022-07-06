@@ -12,7 +12,7 @@ body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
-	min-height: calc(100vh - 16px);
+	height: 100vh;
 	font-family: 'Alumatica', sans-serif;
 	color: black;
 }
@@ -26,48 +26,91 @@ header {
 }
 
 header a {
-	display: block;
+	display: flex;
 	color: black;
 	padding: 12px;
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 19px;
 	border-radius: 4px;
-}
-
-header a:hover {
-	background-color: #ddd;
-	color: black;
+	height: 64px;
 }
 
 header a.selected {
-	background-color: dodgerblue;
+	background: linear-gradient(180deg, #0384fc, #0384fF);
+	color: white;
+	border-radius: 10px;
+	height: 30px;
+}
+
+header a.selected:hover {
+	background: linear-gradient(180deg, #9842f5, #4266f5);
 	color: white;
 }
 
 header a.logo {
+	display: flex;
 	margin-top: -15px;
 	margin-bottom: -58px;
-	margin-right: 1794px;
+	margin-right: 96000px;
 	padding: 5px;
 	min-width: 64px;
-	border-radius: 15px;
-	display: flex;
 }
 
 header a.logo:hover {
 	cursor: pointer;
 }
 
+
+header a.about {
+	color: white;
+	border-radius: 10px;
+	height: 19px;
+	background: gray;
+}
+
+header a.projects {
+	background: gray;
+	color: white;
+	border-radius: 10px;
+	height: 19px;
+}
+
+header a.about:hover {
+	background: linear-gradient(180deg, #9842f5, #4266f5);
+	height: 30px;
+	animation: about-hover 30ms ease;
+	transition: padding 0.4s about-leave;
+
+}
+
+header not(a.about:hover) {
+	background: linear-gradient(180deg, #9842f5, #4266f5);
+	height: 30px;
+	animation: about-leave 30ms ease;
+
+}
+
+header a.projects:hover {
+	background: linear-gradient(180deg, #9842f5, #4266f5);
+	height: 30px;
+
+}
+
 .logo-image {
+	display: flex;
 	border-radius: 10px;
 	width: 64px;
 	height: 64px;
+
 }
 
 .middle-header {
 	display: flex;
 	justify-content: center;
+	margin-top: -60px;
+	margin-bottom: 2px;
+	gap: 5px;
 }
 
 @keyframes gradient {
@@ -84,6 +127,97 @@ header a.logo:hover {
 	}
 }
 
+@keyframes about-hover {
+	0% {
+		height: 19px;
+	}
+
+	11% {
+		height: 20px;
+	}
+
+	22% {
+		height: 21px;
+	}
+
+	33% {
+		height: 22px;
+	}
+
+	44% {
+		height: 23px;
+	}
+
+	55% {
+		height: 24px;
+	}
+
+	66% {
+		height: 25px;
+	}
+
+	77% {
+		height: 26px;
+	}
+
+	88% {
+		height: 27px;
+	}
+
+	99% {
+		height: 28px;
+	}
+
+	100% {
+		height: 30px;
+	}
+}
+
+@keyframes about-leave {
+	0% {
+		height: 30px;
+	}
+
+	11% {
+		height: 28px;
+	}
+
+	22% {
+		height: 27px;
+	}
+
+	33% {
+		height: 26px;
+	}
+
+	44% {
+		height: 25px;
+	}
+
+	55% {
+		height: 24px;
+	}
+
+	66% {
+		height: 23px;
+	}
+
+	77% {
+		height: 22px;
+	}
+
+	88% {
+		height: 21px;
+	}
+
+	99% {
+		height: 20px;
+	}
+
+	100% {
+		height: 19px;
+	}
+}
 
 @media screen and (max-width: 500px) {
 	header a {
