@@ -13,6 +13,7 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 	min-height: calc(100vh - 16px);
+	min-width: 450px;
 	font-family: 'Alumatica', sans-serif;
 	color: black;
 }
