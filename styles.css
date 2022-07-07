@@ -123,6 +123,7 @@ header a.logo {
 	margin: 50px;
 	border-radius: 20px;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+	cursor: pointer;
 }
 
 .about-panel:hover {
