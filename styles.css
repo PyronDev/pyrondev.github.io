@@ -71,8 +71,9 @@ header a.logo:hover {
 header a.about {
 	border-radius: 10px;
 	height: 19px;
-	background: rgba(3, 132, 252, 0.2);
 	color: #0384fc;
+	background: rgba(3, 132, 252, 0.2);
+
 }
 
 header a.about:hover {
@@ -126,6 +127,7 @@ header a.logo {
 	border-radius: 20px;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
 	cursor: pointer;
+
 }
 
 .about-panel:hover {
@@ -140,10 +142,11 @@ header a.logo {
 .about-panel-title {
 	text-align: center;
 	margin-top: 10px;
-	color: white;
 	background: rgba(3, 132, 252, 0.9);
 	border-radius: 18px 18px 0px 0px;
 	cursor: default;
+	color: #0384fc;
+	background: rgba(3, 132, 252, 0.3);
 
 }
 
