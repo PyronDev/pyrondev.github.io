@@ -1,11 +1,4 @@
-@font-face {
-	font-family: 'Alumatica';
-	src: url('fonts/Alumatica.woff2') format('woff2'),
-		url('fonts/Alumatica.otf') format('opentype');
-	font-style: normal;
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 
 body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
@@ -13,9 +6,10 @@ body {
 	animation: gradient 10s ease infinite;
 	min-height: calc(100vh - 16px);
 	min-width: 450px;
-	font-family: 'Alumatica', sans-serif;
+	font-family: 'Space Grotesk', sans-serif;
 	color: black;
 }
+
 
 header {
 	overflow: hidden;
@@ -75,28 +69,29 @@ header a.logo:hover {
 
 
 header a.about {
-	color: white;
 	border-radius: 10px;
 	height: 19px;
-	background: gray;
+	background: rgba(3, 132, 252, 0.2);
+	color: #0384fc;
 }
 
 header a.about:hover {
 	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
+	color: white;
 }
 
 header a.projects {
-	background: gray;
-	color: white;
+	background: rgba(3, 132, 252, 0.2);
 	border-radius: 10px;
 	height: 19px;
+	color: #0384fc;
 }
 
 header a.projects:hover {
 	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
-
+	color: white;
 }
 
 header a.logo {
@@ -132,7 +127,6 @@ header a.logo {
 .about-panel:hover {
 	background: whitesmoke;
 	animation: panel-hover 100ms ease forwards;
-
 }
 
 .about-panel:not(:hover) {
