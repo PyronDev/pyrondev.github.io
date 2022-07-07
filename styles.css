@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@600&display=swap');
 
 body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	min-height: calc(100vh - 16px);
-	min-width: 450px;
+	min-width: 512px;
+	font-family: 'Roboto', sans-serif;
 	font-family: 'Space Grotesk', sans-serif;
 	color: black;
 }
@@ -126,7 +127,6 @@ header a.logo {
 	margin: 50px;
 	border-radius: 20px;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
-	cursor: pointer;
 
 }
 
@@ -142,12 +142,18 @@ header a.logo {
 .about-panel-title {
 	text-align: center;
 	margin-top: 10px;
-	background: rgba(3, 132, 252, 0.9);
-	border-radius: 18px 18px 0px 0px;
 	cursor: default;
 	color: #0384fc;
+	margin-left: 80px;
+	margin-right: 80px;
 	background: rgba(3, 132, 252, 0.3);
+}
 
+.about-panel-description {
+	text-align: center;
+	margin-top: 10px;
+	cursor: default;
+	font-family: 'Roboto', sans-serif;
 }
 
 @keyframes gradient {
