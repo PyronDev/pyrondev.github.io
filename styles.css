@@ -3,7 +3,7 @@
 body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 20s ease infinite;
 	min-height: calc(100vh - 16px);
 	min-width: 450px;
 	font-family: 'Space Grotesk', sans-serif;
