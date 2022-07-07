@@ -7,7 +7,6 @@
 	text-rendering: optimizeLegibility;
 }
 
-
 body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
 	background-size: 400% 400%;
@@ -121,6 +120,25 @@ header a.logo {
 	height: 42.5px;
 }
 
+.about-panel {
+	width: 280px;
+	height: 350px;
+	background: white;
+	margin: 50px;
+	border-radius: 20px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.about-panel:hover {
+	background: whitesmoke;
+	animation: panel-hover 100ms ease forwards;
+
+}
+
+.about-panel:not(:hover) {
+	animation: panel-leave 100ms ease;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -152,5 +170,33 @@ header a.logo {
 
 	100% {
 		height: 19px;
+	}
+}
+
+@keyframes panel-hover {
+	0% {
+		width: 280px;
+		height: 350px;
+		margin: 50px;
+	}
+
+	100% {
+		margin: 45px;
+		width: 295px;
+		height: 365px;
+	}
+}
+
+@keyframes panel-leave {
+	0% {
+		margin: 45px;
+		width: 295px;
+		height: 365px;
+	}
+
+	100% {
+		width: 280px;
+		height: 350px;
+		margin: 50px;
 	}
 }
