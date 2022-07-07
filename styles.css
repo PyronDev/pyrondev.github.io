@@ -145,6 +145,7 @@ header a.logo {
 	cursor: default;
 	color: #0384fc;
 	margin-left: 80px;
+	border-radius: 0px 0px 7px 7px;
 	margin-right: 80px;
 	background: rgba(3, 132, 252, 0.3);
 }
