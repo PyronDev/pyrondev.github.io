@@ -120,6 +120,8 @@ header a.logo {
 	width: 280px;
 	height: 350px;
 	background: white;
+	opacity: 70%;
+	font-size: 20px;
 	margin: 50px;
 	border-radius: 20px;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
@@ -133,6 +135,17 @@ header a.logo {
 
 .about-panel:not(:hover) {
 	animation: panel-leave 100ms ease;
+}
+
+.about-panel-title {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	background: rgba(3, 132, 252, 0.9);
+	border-radius: 18px 18px 0px 0px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+	cursor: default;
+
 }
 
 @keyframes gradient {
@@ -171,12 +184,16 @@ header a.logo {
 
 @keyframes panel-hover {
 	0% {
+		font-size: 20px;
+		opacity: 70%;
 		width: 280px;
 		height: 350px;
 		margin: 50px;
 	}
 
 	100% {
+		font-size: 21px;
+		opacity: 100%;
 		margin: 45px;
 		width: 295px;
 		height: 365px;
@@ -185,12 +202,16 @@ header a.logo {
 
 @keyframes panel-leave {
 	0% {
+		font-size: 21px;
+		opacity: 100%;
 		margin: 45px;
 		width: 295px;
 		height: 365px;
 	}
 
 	100% {
+		font-size: 20px;
+		opacity: 70%;
 		width: 280px;
 		height: 350px;
 		margin: 50px;
