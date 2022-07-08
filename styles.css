@@ -2,7 +2,7 @@
 
 body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
-	background-size: 400% 400%;
+	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
 	min-height: 98vh min-width: 512px;
 	font-family: 'Roboto', sans-serif;
