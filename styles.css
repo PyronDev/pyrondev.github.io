@@ -4,19 +4,20 @@ body {
 	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-	min-height: calc(100vh - 16px);
-	min-width: 512px;
+	min-height: 98vh min-width: 512px;
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Space Grotesk', sans-serif;
 	color: black;
 }
 
-
 header {
 	overflow: hidden;
-	border-radius: 10px;
 	background-color: white;
 	padding: 20px 10px;
+	margin-top: -8px;
+	margin-right: -8px;
+	margin-left: -8px;
+	min-width: 512px;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
 }
 
@@ -142,6 +143,7 @@ header a.logo {
 .about-panel-title {
 	text-align: center;
 	margin-top: 10px;
+	padding: 4px;
 	cursor: default;
 	color: #0384fc;
 	margin-left: 80px;
