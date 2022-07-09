@@ -69,6 +69,16 @@ header a.logo:hover {
 	cursor: pointer;
 }
 
+header a.home {
+	height: 19px;
+	color: white;
+	background: #383d45;
+
+}
+
+header a.home:hover {
+	height: 30px;
+}
 
 header a.about {
 	height: 19px;
