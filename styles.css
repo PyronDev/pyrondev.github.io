@@ -18,6 +18,8 @@ header {
 	margin-right: -8px;
 	margin-left: -8px;
 	min-width: 512px;
+	outline: 1px solid grey;
+
 }
 
 header a {
@@ -117,7 +119,7 @@ header a.logo {
 	opacity: 70%;
 	font-size: 20px;
 	margin: 50px;
-
+	outline: 1px solid grey;
 }
 
 .about-panel:hover {
@@ -133,8 +135,6 @@ header a.logo {
 	padding: 4px;
 	cursor: default;
 	color: white;
-
-
 }
 
 .about-panel-description {
