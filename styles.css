@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@600&display=swap');
 
 body {
-	background: linear-gradient(-45deg, #9842f5, #4266f5, #42d7f5);
+	background: #2B2F35;
 	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
 	min-height: 98vh min-width: 512px;
@@ -12,13 +12,12 @@ body {
 
 header {
 	overflow: hidden;
-	background-color: white;
+	background-color: #24272b;
 	padding: 20px 10px;
 	margin-top: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
 	min-width: 512px;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
 }
 
 header a {
@@ -34,6 +33,7 @@ header a {
 
 header a:hover {
 	animation: header-hover 50ms ease;
+
 }
 
 header a:not(:hover) {
@@ -41,9 +41,8 @@ header a:not(:hover) {
 }
 
 header a.selected {
-	background: linear-gradient(180deg, #0384fc, #0384fF);
+	background: #2B2F35;
 	color: white;
-	border-radius: 10px;
 	height: 19px;
 }
 
@@ -52,7 +51,6 @@ header a.selected:hover {
 }
 
 header a.selected:not(:hover) {
-	color: white;
 	animation: none;
 }
 
@@ -71,30 +69,24 @@ header a.logo:hover {
 
 
 header a.about {
-	border-radius: 10px;
 	height: 19px;
-	color: #0384fc;
-	background: rgba(3, 132, 252, 0.2);
+	color: white;
+	background: #383d45;
 
 }
 
 header a.about:hover {
-	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
-	color: white;
 }
 
 header a.projects {
-	background: rgba(3, 132, 252, 0.2);
-	border-radius: 10px;
+	background: #383d45;
 	height: 19px;
-	color: #0384fc;
+	color: white;
 }
 
 header a.projects:hover {
-	background: linear-gradient(180deg, #0384fc, #0384fF);
 	height: 30px;
-	color: white;
 }
 
 header a.logo {
@@ -103,12 +95,11 @@ header a.logo {
 
 .logo-image {
 	display: flex;
-	border-radius: 10px;
+	border-radius: 5px;
 	width: 64px;
 	height: 64px;
 
 }
-
 
 .middle-header {
 	display: flex;
@@ -122,17 +113,14 @@ header a.logo {
 .about-panel {
 	width: 280px;
 	height: 350px;
-	background: white;
+	background: #383d45;
 	opacity: 70%;
 	font-size: 20px;
 	margin: 50px;
-	border-radius: 20px;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.30), 0 2px 4px 0 rgba(0, 0, 0, 0.30);
 
 }
 
 .about-panel:hover {
-	background: whitesmoke;
 	animation: panel-hover 100ms ease forwards;
 }
 
@@ -144,13 +132,8 @@ header a.logo {
 	text-align: center;
 	padding: 4px;
 	cursor: default;
-	color: #0384fc;
+	color: white;
 
-}
-
-.about-panel-title-divider {
-	padding: 2px;
-	background: rgba(3, 132, 252, 0.8);
 
 }
 
@@ -158,6 +141,7 @@ header a.logo {
 	text-align: center;
 	margin-top: 10px;
 	cursor: default;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 }
 
