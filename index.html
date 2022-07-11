@@ -12,14 +12,15 @@
 	</head>
 
 	<body>
+		<input type="checkbox" id="menuCheckbox">
 		<header>
 			<a href="https://github.com/PyronDev" class="logo">
-				<img src="./images/PyronDev_logo_bw.png" class="logo-image" alt="🟦">
+				<img src="./images/PyronDev_logo_bw.png" class="logo-image" alt="black and white logo">
 			</a>
-			<div class="title">PyronDev</div>
-			<div class="menu" id="menu">
-				<img src="./images/menu.svg" class="menu-checkbox" onclick="menuClicked()" alt="🟦">
-			</div>
+			<h1 class="title">PyronDev</h1>
+			<label for="menuCheckbox" class="menu">
+				<img src="./images/menu.svg" onclick="menuClicked()">
+			</label>
 		</header>
 		<div class="menu-content" id="menuContent">
 			<div class="home-button">Home</div>

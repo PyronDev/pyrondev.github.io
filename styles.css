@@ -12,86 +12,61 @@
 body {
 	margin: 0;
 	background: var(--colour-bg-normal);
-	background-size: 700% 700%;
-	animation: gradient 20s ease infinite;
 	min-height: 100vh;
-	min-width: 512px;
-	font-family: 'Roboto', sans-serif;
 	font-family: 'Space Grotesk', sans-serif;
-	color: black;
 }
 
 header {
 	overflow: hidden;
 	background-color: var(--colour-bg-dark);
-	padding: 20px 10px;
-	min-width: 512px;
+	/* padding: 20px 10px; */
 	outline: 1px solid var(--colour-light);
-}
-
-header a {
 	display: flex;
-	color: black;
-	padding: 12px 20px;
-	text-decoration: none;
-	font-size: 18px;
-	line-height: 19px;
-	border-radius: 4px;
-	height: 64px;
+	justify-content: space-between;
+	align-items: center;
 }
 
-header a.logo {
-	display: flex;
-	margin-top: -15px;
-	margin-bottom: -58px;
-	margin-right: 96000px;
-	padding: 5px;
-	min-width: 64px;
-}
-
-header a.logo:hover {
-	cursor: pointer;
-}
-
-header a.logo {
-	animation: none;
-}
-
-.logo-image {
-	display: flex;
+.logo > img {
 	border-radius: 5px;
 	width: 64px;
 	height: 64px;
-	margin-top: 5px;
-
+	display: block;
 }
 
 .title {
-	display: flex;
-	justify-content: center;
 	color: var(--colour-text-light);
 	font-size: 40px;
+	margin: 0;
+	height: min-content;
 }
 
 .menu {
-	display: flex;
-	position:relative;
-	float:right;
-	height: 50px;
-	margin-top: -50px;
-	animation: none;
-	z-index:1;
+	width: 64px;
+	cursor: pointer;
 }
 
-.menu:hover {
-	cursor: pointer;
+.menu>img{
+	width: 100%;
+	display: block;
+}
+
+#menuCheckbox{
+	display: none;
+}
+
+header > a,
+header > label{
+	padding: 20px 10px;
+}
+
+#menuCheckbox:checked + header > label{
+	opacity: 0.9;
 }
 
 .menu-content{
 	display:flex;
 	background:var(--colour-bg-dark);
 	position:relative;
-	float:right;
 	margin-top:-300px;
 	z-index:-1;
 	width:300px;
@@ -109,7 +84,6 @@ header a.logo {
 	text-align:center;
 	color:var(--colour-text-light);
 	outline: 1px solid var(--colour-light);
-
 }
 
 .about-panel {
@@ -185,13 +159,11 @@ header a.logo {
 	0% {
 		transform: rotate(0deg);
 		opacity: 100%;
-
 	}
 
 	100% {
 		transform: rotate(90deg);
 		opacity: 0%;
-
 	}
 }
 
@@ -200,7 +172,6 @@ header a.logo {
 		transform: rotate(90deg);
 		opacity: 0%;
 	}
-
 	100% {
 		transform: rotate(180deg);
 		opacity: 100%;
@@ -212,10 +183,8 @@ header a.logo {
 		z-index:-1;
 		margin-top:-300px;
 	}
-
 	100% {
 		margin-top:1px;
-
 	}
 }
 
@@ -223,7 +192,6 @@ header a.logo {
 	0% {
 		margin-top:1px;
 	}
-
 	100% {
 		margin-top:-300px;
 		z-index:-1;
