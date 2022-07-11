@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@600&display=swap');
 
+:root{
+	--colour-bg-dark: #24272b;
+	--colour-bg-normal: #2B2F35;
+	--colour-bg-light: #383d45;
+	--colour-light: #808080;
+	--colour-text-light: #fff;
+	--colour-text-dark: #d3d3d3;
+}
+
 body {
-	background: #2B2F35;
+	background: var(--colour-bg-normal);
 	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
 	min-height: 98vh;
@@ -13,13 +22,13 @@ body {
 
 header {
 	overflow: hidden;
-	background-color: #24272b;
+	background-color: var(--colour-bg-dark);
 	padding: 20px 10px;
 	margin-top: -8px;
 	margin-right: -8px;
 	margin-left: -8px;
 	min-width: 512px;
-	outline: 1px solid grey;
+	outline: 1px solid var(--colour-light);
 
 }
 
@@ -63,7 +72,7 @@ header a.logo {
 .title {
 	display: flex;
 	justify-content: center;
-	color: white;
+	color: var(--colour-text-light);
 	font-size: 40px;
 }
 
@@ -83,7 +92,7 @@ header a.logo {
 
 .menu-content{
 	display:flex;
-	background:#24272b;
+	background:var(--colour-bg-dark);
 	position:relative;
 	float:right;
 	margin-top:-300px;
@@ -91,7 +100,7 @@ header a.logo {
 	width:300px;
 	height:300px;
 	margin-right:-7px;
-	outline: 1px solid grey;
+	outline: 1px solid var(--colour-light);
 }
 
 .home-button{
@@ -100,21 +109,21 @@ header a.logo {
 	justify-content:center;
 	width:300px;
 	height:40px;
-	background:#2B2F35;
+	background:var(--colour-bg-normal);
 	text-align:center;
-	color:white;
-	outline: 1px solid grey;
+	color:var(--colour-text-light);
+	outline: 1px solid var(--colour-light);
 
 }
 
 .about-panel {
 	width: 280px;
 	height: 350px;
-	background: #383d45;
+	background: var(--colour-bg-light);
 	opacity: 70%;
 	font-size: 20px;
 	margin: 50px;
-	outline: 1px solid grey;
+	outline: 1px solid var(--colour-light);
 }
 
 .about-panel:hover {
@@ -129,14 +138,14 @@ header a.logo {
 	text-align: center;
 	padding: 4px;
 	cursor: default;
-	color: white;
+	color: var(--colour-text-light);
 }
 
 .about-panel-description {
 	text-align: center;
 	margin-top: 10px;
 	cursor: default;
-	color: lightgrey;
+	color: var(--colour-text-dark);
 	font-family: 'Roboto', sans-serif;
 }
 
