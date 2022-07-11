@@ -4,7 +4,8 @@ body {
 	background: #2B2F35;
 	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
-	min-height: 98vh min-width: 512px;
+	min-height: 98vh;
+	min-width: 512px;
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Space Grotesk', sans-serif;
 	color: black;
@@ -68,18 +69,43 @@ header a.logo {
 
 .menu {
 	display: flex;
-	float: right;
-	width: 55px;
+	position:relative;
+	float:right;
 	height: 50px;
 	margin-top: -50px;
 	animation: none;
+	z-index:1;
 }
 
 .menu:hover {
 	cursor: pointer;
 }
 
+.menu-content{
+	display:flex;
+	background:#24272b;
+	position:relative;
+	float:right;
+	margin-top:-300px;
+	z-index:-1;
+	width:300px;
+	height:300px;
+	margin-right:-7px;
+	outline: 1px solid grey;
+}
 
+.home-button{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:300px;
+	height:40px;
+	background:#2B2F35;
+	text-align:center;
+	color:white;
+	outline: 1px solid grey;
+
+}
 
 .about-panel {
 	width: 280px;
@@ -150,7 +176,7 @@ header a.logo {
 	}
 }
 
-@keyframes menu-slide-out {
+@keyframes menu-rotate-out {
 	0% {
 		transform: rotate(0deg);
 		opacity: 100%;
@@ -164,14 +190,37 @@ header a.logo {
 	}
 }
 
-@keyframes menu-slide-in {
+@keyframes menu-rotate-in {
 	0% {
 		transform: rotate(90deg);
 		opacity: 0%;
 	}
 
 	100% {
-		transform: rotate(0deg);
+		transform: rotate(180deg);
 		opacity: 100%;
+	}
+}
+
+@keyframes menu-slide-down {
+	0% {
+		z-index:-1;
+		margin-top:-300px;
+	}
+
+	100% {
+		margin-top:1px;
+
+	}
+}
+
+@keyframes menu-slide-up {
+	0% {
+		margin-top:1px;
+	}
+
+	100% {
+		margin-top:-300px;
+		z-index:-1;
 	}
 }
