@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@600&display=swap');
 
+/* global styles */
 :root{
 	--colour-bg-dark: #24272b;
 	--colour-bg-normal: #2B2F35;
@@ -17,6 +18,9 @@ body {
 	min-height: 100vh;
 	font-family: 'Space Grotesk', sans-serif;
 }
+
+
+/* header */
 
 header {
 	overflow: hidden;
@@ -63,6 +67,8 @@ header > a,
 header > label{
 	padding: 20px 10px;
 }
+
+/* menu */
 
 .burger-bar{
 	transform-origin: center;
@@ -139,6 +145,8 @@ header > label{
 	outline: 1px solid var(--colour-light);
 	text-decoration: none;
 }
+
+/* panels */
 
 .about-panel {
 	width: 280px;
