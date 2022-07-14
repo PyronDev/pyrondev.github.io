@@ -7,6 +7,8 @@
 	--colour-light: #808080;
 	--colour-text-light: #fff;
 	--colour-text-dark: #d3d3d3;
+
+	--animation-time: 1s;
 }
 
 body {
@@ -20,10 +22,12 @@ header {
 	overflow: hidden;
 	background-color: var(--colour-bg-dark);
 	/* padding: 20px 10px; */
-	outline: 1px solid var(--colour-light);
+	border-bottom: 1px solid var(--colour-light);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 15;
+	position: relative;
 }
 
 .logo > img {
@@ -43,6 +47,7 @@ header {
 .menu {
 	width: 64px;
 	cursor: pointer;
+	height: 64px;
 }
 
 .menu>img{
@@ -59,31 +64,80 @@ header > label{
 	padding: 20px 10px;
 }
 
-#menuCheckbox:checked + header > label{
-	opacity: 0.9;
+.burger-bar{
+	transform-origin: center;
+	transition: transform var(--animation-time);
 }
 
+#menuCheckbox:checked + header > label .burger-menu .burger-bar.top{
+	transform: rotate(45deg) translate(0,calc(4 / 18 * 100%));
+}
+
+#menuCheckbox:checked + header > label .burger-menu .burger-bar.mid{
+	transform: rotate(45deg);
+}
+
+#menuCheckbox:checked + header > label .burger-menu .burger-bar.low{
+	transform: rotate(315deg) translate(0,calc(4 / 18 * -100%));
+}
+
+#menuCheckbox:checked + header > label .burger-menu{
+	transform: rotate(180deg);
+	/* transform: rotate(360deg); */
+	/* transform: rotate(720deg); */
+	/* transform: rotate(1080deg); */
+	/* transform: rotate(2160deg); */
+}
+
+.burger-menu{
+	transition: transform var(--animation-time);
+	width: 100%;
+	color: var(--colour-text-light);
+	transform-origin: center;
+}
+
+#menuCheckbox:not(:checked) ~ .menu-content{
+	transform: translateY(-100%);
+}
 .menu-content{
 	display:flex;
+	flex-direction: column;
 	background:var(--colour-bg-dark);
-	position:relative;
-	margin-top:-300px;
-	z-index:-1;
-	width:300px;
-	height:300px;
-	outline: 1px solid var(--colour-light);
+	position:absolute;
+	z-index: 10;
+	width:20em;
+	height:min-content;
+	border: 1px solid var(--colour-light);
+	border-top: none;
+	right: 0;
+	transform: translateY(0);
+	transition: transform var(--animation-time);
+}
+#menuCheckbox:checked ~ .menu-content{
+	animation: slide var(--animation-time);
+	display:flex;
+}
+#menuCheckbox:not(:checked) ~ .menu-content.hidden{
+	display: none;
+}
+@keyframes slide {
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
 }
 
-.home-button{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	width:300px;
-	height:40px;
+.menu-link-button{
+	padding: 0.5em 0;
+	width:100%;
+	height:min-content;
 	background:var(--colour-bg-normal);
 	text-align:center;
 	color:var(--colour-text-light);
 	outline: 1px solid var(--colour-light);
+	text-decoration: none;
 }
 
 .about-panel {
@@ -152,48 +206,5 @@ header > label{
 		width: 280px;
 		height: 350px;
 		margin: 50px;
-	}
-}
-
-@keyframes menu-rotate-out {
-	0% {
-		transform: rotate(0deg);
-		opacity: 100%;
-	}
-
-	100% {
-		transform: rotate(90deg);
-		opacity: 0%;
-	}
-}
-
-@keyframes menu-rotate-in {
-	0% {
-		transform: rotate(90deg);
-		opacity: 0%;
-	}
-	100% {
-		transform: rotate(180deg);
-		opacity: 100%;
-	}
-}
-
-@keyframes menu-slide-down {
-	0% {
-		z-index:-1;
-		margin-top:-300px;
-	}
-	100% {
-		margin-top:1px;
-	}
-}
-
-@keyframes menu-slide-up {
-	0% {
-		margin-top:1px;
-	}
-	100% {
-		margin-top:-300px;
-		z-index:-1;
 	}
 }

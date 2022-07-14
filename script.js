@@ -1,32 +1,22 @@
-function sleep(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-var menuOpen = false;
-
-async function menuClicked() {
-	var menu = document.querySelector("[for=\"menuCheckbox\"]");
-	var menuImg = document.querySelector("[for=\"menuCheckbox\"]>img");
-	var menuContent = document.querySelector("#menuContent");
-	if (menuOpen == false) {
-		menu.style.animation = 'menu-rotate-out 150ms';
-		menuContent.style.animation = 'menu-slide-down 150ms';
-		await sleep(150);
-		menuContent.style.marginTop = "1px";
-		menuContent.style.ZIndex = "1";
-		menuImg.src = "./images/close_menu.svg";
-		menu.style.animation = 'menu-rotate-in 150ms';
-		menuOpen = true;
-	} else if (menuOpen == true) {
-		menu.style.animation = 'menu-rotate-out 150ms';
-		menuContent.style.animation = 'menu-slide-up 150ms';
-		await sleep(150);
-		menuContent.style.marginTop = "-300px";
-		menuContent.style.ZIndex = "-1";
-		menuImg.src = "./images/menu.svg";
-		menu.style.animation = 'menu-rotate-in 150ms';
-		menuOpen = false;
+menuCheckbox = document.getElementById("menuCheckbox")
+menuCheckbox.checked = false;
+menuCheckbox.addEventListener('change', e => {
+	var MenuContent = document.querySelectorAll(".menu-content")
+	if(!e.target.checked){
+		var value = window.getComputedStyle(MenuContent[0]).getPropertyValue("--animation-time");
+		if (value.endsWith("ms")){
+			value = value.slice(0,-2)
+		}else if(value.endsWith("s")){
+			value = value.slice(0,-1)*1000
+		}
+		setTimeout(()=>{
+			MenuContent.forEach(el => {
+				el.classList.add("hidden")
+			});
+		},value);
+	}else{
+		MenuContent.forEach(el => {
+			el.classList.remove("hidden")
+		});
 	}
-	await sleep(200);
-	menu.style.animation = 'none';
-};
+});

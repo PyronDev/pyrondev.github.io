@@ -8,7 +8,7 @@
 		<title>PyronDev | Home</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<link rel="stylesheet" href="styles.css">
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 	</head>
 
 	<body>
@@ -19,15 +19,32 @@
 			</a>
 			<h1 class="title">PyronDev</h1>
 			<label for="menuCheckbox" class="menu">
-				<img src="./images/menu.svg" onclick="menuClicked()">
+				<svg class="burger-menu" viewBox="0 0 24 24">
+					<g style="fill:currentColor;" class="burger-bar top">
+						<rect width="18" height="2" x="3" y="6"/>
+						<rect width="18" height="18" x="3" y="3" fill="transparent"/>
+					</g>
+					<g style="fill:currentColor;" class="burger-bar mid">
+						<rect width="18" height="2" x="3" y="11"/>
+						<rect width="18" height="18" x="3" y="3" fill="transparent"/>
+					</g>
+					<g style="fill:currentColor;" class="burger-bar low">
+						<rect width="18" height="2" x="3" y="16"/>
+						<rect width="18" height="18" x="3" y="3" fill="transparent"/>
+					</g>
+				</svg>
 			</label>
 		</header>
-		<div class="menu-content" id="menuContent">
-			<div class="home-button">Home</div>
-		</div>
-		<div class="about-panel">
-			<h2 class="about-panel-title">News</h2>
-			<div class="about-panel-description">Pyron Anticheat is currently being developed, we hope to release soon.
-		</div>
+		<nav class="menu-content hidden" id="menuContent">
+			<a class="menu-link-button" href="/">Home</a>
+			<a class="menu-link-button" href="/downloads.html">Downloads</a>
+			<a class="menu-link-button" href="/about.html">About</a>
+		</nav>
+		<main>
+			<div class="about-panel">
+				<h2 class="about-panel-title">News</h2>
+				<div class="about-panel-description">Pyron Anticheat is currently being developed, we hope to release soon.
+			</div>
+		</main>
 	</body>
 </html>
