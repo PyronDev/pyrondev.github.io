@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+	<mask id="PHoleMain">
+		<rect width="1000" height="1671" x="536" y="188" fill="white"/>
+		<rect width="334" height="334" x="870" y="522" fill="black"/>
+	</mask>
+	<mask id="PHoleShadA">
+		<rect width="1000" height="1671" x="576" y="228" fill="#616161"/>
+		<rect width="334" height="334" x="910" y="562" fill="black"/>
+	</mask>
+	<mask id="PHoleShadAFull">
+		<rect width="1000" height="1671" x="576" y="228" fill="white"/>
+		<rect width="334" height="334" x="910" y="562" fill="black"/>
+	</mask>
+	<mask id="PHoleShadB">
+		<rect width="1000" height="1671" x="616" y="268" fill="#363636"/>
+		<path d="M 576 228 h 834 l 166 166 v 836 h -668 v 669 h -166 l -166 -166 v -1505 z" fill="#000" mask="url(#PHoleShadAFull)"/>
+		<rect width="334" height="334" x="950" y="602" fill="black"/>
+	</mask>
+	<path d="M 0 0 L 2048 2048 L 2048 0 L 0 0 z" id="BGTop" fill="#00d8ff"/>
+	<path d="M 0 0 L 2048 2048 L 0 2048 L 0 0 z" id="BGBot" fill="#06ffd9"/>
+	<path d="M 616 268 h 834 l 166 166 v 836 h -668 v 669 h -166 l -166 -166 v -1505 z" id="PShadB" fill="#000" mask="url(#PHoleShadB)"/>
+	<path d="M 576 228 h 834 l 166 166 v 836 h -668 v 669 h -166 l -166 -166 v -1505 z" id="PShadA" fill="#000" mask="url(#PHoleShadA)"/>
+	<path d="M 536 188 h 834 l 166 166 v 836 h -668 v 669 h -166 l -166 -166 v -1505 z" id="PMain" fill="#000" mask="url(#PHoleMain)"/>
+</svg>

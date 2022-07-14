@@ -9,6 +9,9 @@
 	--colour-text-light: #fff;
 	--colour-text-dark: #d3d3d3;
 
+	--colour-primary: #00d8ff;
+	--colour-secondary: #06ffd9;
+
 	--animation-time: 1s;
 	--short-animation-time: 0.1s;
 }
