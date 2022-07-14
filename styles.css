@@ -10,6 +10,7 @@
 	--colour-text-dark: #d3d3d3;
 
 	--animation-time: 1s;
+	--short-animation-time: 0.1s;
 }
 
 body {
@@ -156,14 +157,11 @@ header > label{
 	font-size: 20px;
 	margin: 50px;
 	outline: 1px solid var(--colour-light);
+	transition: scale var(--short-animation-time);
 }
 
 .about-panel:hover {
-	animation: panel-hover 100ms ease forwards;
-}
-
-.about-panel:not(:hover) {
-	animation: panel-leave 100ms ease;
+	scale: 1.05;
 }
 
 .about-panel-title {
@@ -179,40 +177,4 @@ header > label{
 	cursor: default;
 	color: var(--colour-text-dark);
 	font-family: 'Roboto', sans-serif;
-}
-
-@keyframes panel-hover {
-	0% {
-		font-size: 20px;
-		opacity: 70%;
-		width: 280px;
-		height: 350px;
-		margin: 50px;
-	}
-
-	100% {
-		font-size: 21px;
-		opacity: 100%;
-		margin: 45px;
-		width: 295px;
-		height: 365px;
-	}
-}
-
-@keyframes panel-leave {
-	0% {
-		font-size: 21px;
-		opacity: 100%;
-		margin: 45px;
-		width: 295px;
-		height: 365px;
-	}
-
-	100% {
-		font-size: 20px;
-		opacity: 70%;
-		width: 280px;
-		height: 350px;
-		margin: 50px;
-	}
 }
