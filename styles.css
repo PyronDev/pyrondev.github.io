@@ -157,11 +157,12 @@ header > label{
 	font-size: 20px;
 	margin: 50px;
 	outline: 1px solid var(--colour-light);
-	transition: scale var(--short-animation-time);
+	transition: scale var(--short-animation-time),opacity var(--short-animation-time);
 }
 
 .about-panel:hover {
 	scale: 1.05;
+	opacity: 100%;
 }
 
 .about-panel-title {
