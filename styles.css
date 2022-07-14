@@ -116,6 +116,7 @@ header > label{
 	height:min-content;
 	border: 1px solid var(--colour-light);
 	border-top: none;
+	border-bottom: none;
 	right: 0;
 	transform: translateY(0);
 	transition: transform var(--animation-time);
@@ -143,38 +144,47 @@ header > label{
 	background:var(--colour-bg-normal);
 	text-align:center;
 	color:var(--colour-text-light);
-	outline: 1px solid var(--colour-light);
+	border-bottom: 1px solid var(--colour-light);
 	text-decoration: none;
+}
+
+/* main */
+
+main{
+	display: flex;
+	gap: 3em;
+	padding: 3em;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 /* panels */
 
-.about-panel {
-	width: 280px;
-	height: 350px;
+.panel {
+	width: 18em;
 	background: var(--colour-bg-light);
 	opacity: 70%;
-	font-size: 20px;
-	margin: 50px;
-	outline: 1px solid var(--colour-light);
+	font-size: 1.2rem;
+	border: 1px solid var(--colour-light);
 	transition: scale var(--short-animation-time),opacity var(--short-animation-time);
+	padding: 0.5em;
 }
 
-.about-panel:hover {
+.panel:hover {
 	scale: 1.05;
 	opacity: 100%;
 }
 
-.about-panel-title {
+.panel-title {
 	text-align: center;
-	padding: 4px;
+	padding: .25em;
 	cursor: default;
 	color: var(--colour-text-light);
 }
 
-.about-panel-description {
+.panel-description {
 	text-align: center;
-	margin-top: 10px;
+	margin: 0;
 	cursor: default;
 	color: var(--colour-text-dark);
 	font-family: 'Roboto', sans-serif;
