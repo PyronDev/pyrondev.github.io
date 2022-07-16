@@ -18,7 +18,7 @@
 				<img src="./images/PyronDev_logo.svg" class="logo-image" alt="logo">
 			</a>
 			<h1 class="title">PyronDev</h1>
-			<label for="menuCheckbox" class="menu">
+			<label for="menuCheckbox" class="menu" tabindex="0"	>
 				<svg class="burger-menu" viewBox="0 0 24 24">
 					<g style="fill:currentColor;" class="burger-bar top">
 						<rect width="18" height="2" x="3" y="6"/>
@@ -36,27 +36,28 @@
 			</label>
 		</header>
 		<nav class="menu-content hidden" id="menuContent">
-			<a class="menu-link-button" href="/">Home</a>
-			<a class="menu-link-button" href="/downloads.html">Downloads</a>
-			<a class="menu-link-button" href="/about.html">About</a>
+			<a class="menu-link-button" href="/"><span>Home</span></a>
+			<a class="menu-link-button" href="/news.html"><span>News</span></a>
+			<a class="menu-link-button" href="/downloads.html"><span>Downloads</span></a>
+			<a class="menu-link-button" href="/about.html"><span>About</span></a>
 		</nav>
 		<main>
-			<div class="panel">
+			<a class="panel" href="/">
 				<h2 class="panel-title">Home</h2>
-				<p class="panel-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, commodi.</p>
-			</div>
-			<div class="panel">
+				<p class="panel-description">The Home Page to the PyronDev Website.</p>
+			</a>
+			<a class="panel" href="/news.html">
 				<h2 class="panel-title">News</h2>
 				<p class="panel-description">Pyron Anticheat is currently being developed, we hope to release soon.</p>
-			</div>
-			<div class="panel">
+			</a>
+			<a class="panel" href="/downloads.html">
+				<h2 class="panel-title">Downloads</h2>
+				<p class="panel-description">Where you can get the release's of Pyron and more.</p>
+			</a>
+			<a class="panel" href="/about.html">
 				<h2 class="panel-title">About</h2>
 				<p class="panel-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, commodi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, commodi.</p>
-			</div>
-			<div class="panel">
-				<h2 class="panel-title">Downloads</h2>
-				<p class="panel-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, commodi.</p>
-			</div>
+			</a>
 		</main>
 	</body>
 </html>

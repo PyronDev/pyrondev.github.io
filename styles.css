@@ -23,6 +23,9 @@ body {
 	font-family: 'Space Grotesk', sans-serif;
 }
 
+a:focus-visible{
+	outline: 2px solid var(--colour-primary);
+}
 
 /* header */
 
@@ -36,6 +39,20 @@ header {
 	align-items: center;
 	z-index: 15;
 	position: relative;
+}
+
+.logo{
+	transition: scale var(--short-animation-time);
+}
+
+.logo:hover,
+.logo:focus-visible{
+	scale: 1.05;
+	outline: none;
+}
+
+.logo:focus-visible > img{
+	outline: 3px double var(--colour-primary);
 }
 
 .logo > img {
@@ -78,6 +95,21 @@ header > label{
 	transform-origin: center;
 	transition: transform var(--animation-time);
 }
+
+.menu{
+	transition: scale var(--short-animation-time);
+}
+
+.menu:hover,
+.menu:focus-visible{
+	scale: 1.075;
+	outline: none;
+}
+
+.menu:focus-visible > svg{
+	outline: 2px solid var(--colour-primary);
+}
+
 
 #menuCheckbox:checked + header > label .burger-menu .burger-bar.top{
 	transform: rotate(45deg) translate(0,calc(4 / 18 * 100%));
@@ -151,6 +183,20 @@ header > label{
 	text-decoration: none;
 }
 
+.menu-link-button > span{
+	display: inline-block;
+	transition: scale var(--short-animation-time);
+}
+
+.menu-link-button:hover > span,
+.menu-link-button:focus-visible > span{
+	scale: 1.1;
+}
+
+.menu-link-button:focus-visible{
+	z-index: 20;
+}
+
 /* main */
 
 main{
@@ -171,9 +217,16 @@ main{
 	border: 1px solid var(--colour-light);
 	transition: scale var(--short-animation-time),opacity var(--short-animation-time);
 	padding: 0.5em;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.panel:hover {
+.panel *{
+	cursor: inherit;
+}
+
+.panel:hover,
+.panel:focus-visible {
 	scale: 1.05;
 	opacity: 100%;
 }
@@ -181,14 +234,12 @@ main{
 .panel-title {
 	text-align: center;
 	padding: .25em;
-	cursor: default;
 	color: var(--colour-text-light);
 }
 
 .panel-description {
 	text-align: center;
 	margin: 0;
-	cursor: default;
 	color: var(--colour-text-dark);
 	font-family: 'Roboto', sans-serif;
 }
