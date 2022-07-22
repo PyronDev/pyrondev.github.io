@@ -329,10 +329,14 @@ main{
 	color: var(--colour-text-light);
 	border: 1px solid var(--colour-secondary);
 	border-radius: .5em;
+	transition: margin 0.05s, padding 0.05s;
 }
 .download-pannel > .download-info > button:hover,
 .download-pannel > .download-info > button:focus-visible{
 	cursor: pointer;
+	margin: .45em .4em;
+	padding: 1.05em 1.1em;
+	/* not a scale as it messes with text */
 }
 .download-pannel > .download-info > button:focus-visible{
 	outline: 3px solid var(--colour-primary);
