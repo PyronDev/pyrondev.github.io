@@ -332,7 +332,7 @@ main{
 }
 .download-pannel > .download-info > button:hover,
 .download-pannel > .download-info > button:focus-visible{
-	scale: 1.025;
+	cursor: pointer;
 }
 .download-pannel > .download-info > button:focus-visible{
 	outline: 3px solid var(--colour-primary);
