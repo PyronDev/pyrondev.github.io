@@ -41,41 +41,41 @@ header {
 	position: relative;
 }
 
-.logo{
+header .logo{
 	transition: scale var(--short-animation-time);
 }
 
-.logo:hover,
-.logo:focus-visible{
+header .logo:hover,
+header .logo:focus-visible{
 	scale: 1.05;
 	outline: none;
 }
 
-.logo:focus-visible > img{
+header .logo:focus-visible > img{
 	outline: 3px double var(--colour-primary);
 }
 
-.logo > img {
+header .logo > img {
 	border-radius: 5px;
 	width: 64px;
 	height: 64px;
 	display: block;
 }
 
-.title {
+header .title {
 	color: var(--colour-text-light);
 	font-size: 40px;
 	margin: 0;
 	height: min-content;
 }
 
-.menu {
+header .menu {
 	width: 64px;
 	cursor: pointer;
 	height: 64px;
 }
 
-.menu>img{
+header .menu>img{
 	width: 100%;
 	display: block;
 }
