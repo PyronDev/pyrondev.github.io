@@ -9,6 +9,7 @@
 	--colour-text-light: #fff;
 	--colour-text-dark: #d3d3d3;
 	--colour-text-xdark: #24272b;
+	--colour-text-orange: #ffb700;
 
 	--colour-primary: #00d8ff;
 	--colour-primary-dark: #008299;
@@ -343,4 +344,5 @@ main{
 }
 .download-pannel .sub-text{
 	font-size: .8rem;
+	color: var(--colour-text-orange);
 }
