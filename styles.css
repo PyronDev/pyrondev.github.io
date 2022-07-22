@@ -206,3 +206,40 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+/* panels */
+
+.panel-link {
+	width: 18em;
+	background: var(--colour-bg-light);
+	opacity: 70%;
+	font-size: 1.2rem;
+	border: 1px solid var(--colour-light);
+	transition: scale var(--short-animation-time),opacity var(--short-animation-time);
+	padding: 0.5em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.panel-link *{
+	cursor: inherit;
+}
+
+.panel-link:hover,
+.panel-link:focus-visible {
+	scale: 1.05;
+	opacity: 100%;
+}
+
+.panel-link>h2 {
+	text-align: center;
+	padding: .25em;
+	color: var(--colour-text-light);
+}
+
+.panel-link>p {
+	text-align: center;
+	margin: 0;
+	color: var(--colour-text-dark);
+	font-family: 'Roboto', sans-serif;
+}
