@@ -271,7 +271,7 @@ main{
 
 /* download panels */
 
-.download-pannel{
+.download-panel{
 	display: grid;
 	grid-template-areas:"title title title"
 						"img subtitle info"
@@ -282,40 +282,41 @@ main{
 	color: var(--colour-text-light);
 	border-radius: .5em;
 	align-items: start;
+	width: 100%;
 }
-.download-pannel p{
+.download-panel p{
 	margin: 0;
 }
-.download-pannel h3{
+.download-panel h3{
 	margin: .5em 0;
 }
-.download-pannel > h2{
+.download-panel > h2{
 	grid-area: title;
 	border-bottom: 2px solid var(--colour-primary);
 	margin: 0;
 	padding: .8em;
 }
-.download-pannel > .icon{
+.download-panel > .icon{
 	grid-area: img;
 	height: 3em;
 	aspect-ratio: 1/1;
 	margin:.5em;
 }
-.download-pannel > .icon > img{
+.download-panel > .icon > img{
 	max-height: 100%;
 	max-width: 100%;
 	height: 100%;
 	width: 100%;
 }
-.download-pannel > .title{
+.download-panel > .title{
 	grid-area: subtitle;
 }
-.download-pannel > .details{
+.download-panel > .details{
 	grid-area: details;
 	margin: 0.5em;
 	border-top: 1px solid var(--colour-light);
 }
-.download-pannel > .download-info{
+.download-panel > .download-info{
 	grid-area: info;
 	background-color: var(--colour-primary-dark);
 	margin: 1em;
@@ -325,25 +326,25 @@ main{
 	overflow: hidden;
 	color: var(--text-colour-light-dark);
 }
-.download-pannel > .download-info > h3{
+.download-panel > .download-info > h3{
 	margin: 0;
 	background-color: var(--colour-secondary-dark);
 	/* color: var(--colour-text-xdark); */
 	padding: .3em .5em;
 	font-size: 1.3rem;
 }
-.download-pannel > .download-info > ul{
+.download-panel > .download-info > ul{
 	list-style-type: none;
 	padding: 0;
 	margin: .5em;
 }
-.download-pannel > .download-info > ul > li{
+.download-panel > .download-info > ul > li{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	border-bottom: 1px solid var(--colour-secondary-dark);
 	gap: 1em;
 }
-.download-pannel > .download-info > button{
+.download-panel > .download-info > button{
 	margin: .5em;
 	padding: 1em;
 	border: none;
@@ -353,17 +354,17 @@ main{
 	border-radius: .5em;
 	transition: margin 0.05s, padding 0.05s;
 }
-.download-pannel > .download-info > button:hover,
-.download-pannel > .download-info > button:focus-visible{
+.download-panel > .download-info > button:hover,
+.download-panel > .download-info > button:focus-visible{
 	cursor: pointer;
 	margin: .45em .4em;
 	padding: 1.05em 1.1em;
 	/* not a scale as it messes with text */
 }
-.download-pannel > .download-info > button:focus-visible{
+.download-panel > .download-info > button:focus-visible{
 	outline: 3px solid var(--colour-primary);
 }
-.download-pannel .sub-text{
+.download-panel .sub-text{
 	font-size: .8rem;
 	color: var(--colour-text-orange);
 }
