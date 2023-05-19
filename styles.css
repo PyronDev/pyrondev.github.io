@@ -236,6 +236,7 @@ main{
 
 .panel-link {
 	width: 18em;
+	height: fit-content;
 	background: var(--colour-bg-light);
 	opacity: 70%;
 	font-size: 1.2rem;
